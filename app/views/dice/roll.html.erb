@@ -1,1 +1,11 @@
 <h1><%= "#{@number}d#{@sides}" %></h1>
+
+<ol>
+  <% @rolls.each do |roll| %>
+    <li>Result: <strong><%= roll %></strong></li>
+  <% end %>
+</ol>
+
+<a href="/">
+  Roll 2d3 again
+</a>
